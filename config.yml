@@ -1,0 +1,51 @@
+baseURL: https://mornin-w.github.io/
+languageCode: zh-cn # en-us
+title: Mornin's Backyard
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: true # 允许爬虫抓取到搜索引擎，建议 true
+
+hasCJKLanguage: true # 自动检测是否包含 中文日文韩文 如果文章中使用了很多中文引号的话可以开启
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+paginate: 5  # 首页每页显示的文章数
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Categories
+                  url: categories/
+                  weight: 10
+
+params:
+    homeInfoParams:
+        Title: "Hi!"
+        Content: >
+            Less is More.
+            
+    socialIcons:
+        - name: github
+          url: "https://github.com/mornin-w/"
+
+    ShowLastMod: true #显示文章更新时间
+
+    ShowToc: true # 显示目录
+    TocOpen: true # 自动展开目录
